@@ -1,0 +1,37 @@
+class CreatePlayers < ActiveRecord::Migration
+  def change
+    create_table :players do |t|
+      t.string  'playerID'
+      t.string  'coachID'
+      t.string  'hofID'
+      t.string  'firstName'
+      t.string  'lastName'
+      t.string  'nameNote'
+      t.string  'nameGiven'
+      t.string  'nameNick'
+      t.integer  'height'
+      t.integer  'weight'
+      t.string  'shootCatch'
+      t.string  'legendsID'
+      t.string  'ihdbID'
+      t.string  'hrefID'
+      t.integer  'firstNHL'
+      t.integer  'lastNHL'
+      t.integer  'firstWHA'
+      t.integer  'lastWHA'
+      t.string  'pos'
+      t.integer  'birthYear'
+      t.integer  'birthMon'
+      t.integer  'birthDay'
+      t.string  'birthCountry'
+      t.string  'birthState'
+      t.string  'birthCity'
+      t.integer  'deathYear'
+      t.integer  'deathMon'
+      t.integer  'deathDay'
+      t.string  'deathCountry'
+      t.string  'deathState'
+      t.string  'deathCity'
+    end
+  end
+end
