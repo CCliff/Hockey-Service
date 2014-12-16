@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141212225431) do
+ActiveRecord::Schema.define(version: 20141213195244) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 20141212225431) do
     t.integer "A"
     t.integer "Pts"
     t.integer "PIM"
-    t.integer "+/-"
+    t.integer "PlusMinus"
     t.integer "PPG"
     t.integer "PPA"
     t.integer "SHG"
@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 20141212225431) do
     t.integer "PostA"
     t.integer "PostPts"
     t.integer "PostPIM"
-    t.integer "Post+/-"
+    t.integer "PostPlusMinus"
     t.integer "PostPPG"
     t.integer "PostPPA"
     t.integer "PostSHG"

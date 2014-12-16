@@ -1,6 +1,9 @@
 require 'bundler'
 Bundler.require
 
+# close out db connections after they are fired
+use ActiveRecord::ConnectionAdapters::ConnectionManagement
+
 # Allow CORS on Heroku
 require 'rack/cors'
 use Rack::Cors do
@@ -28,7 +31,9 @@ end
 # require controllers in the correct order (application_controller first)
 require './app/controllers/application_controller'
 require './app/controllers/player_controller'
+require './app/controllers/search_controller'
 
 # map routes to the correct controllers for routing
 map('/api/players'){run PlayerController}
+map('/api/search'){run SearchController}
 map('/'){run ApplicationController}

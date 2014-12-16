@@ -15,8 +15,8 @@ end
 namespace :db do
   desc "add hockey data to the db"
   task :hockey_data do
-    Rake::Task["player_data"].execute
-    Rake::Task["scoring_season_data"].execute
+    Rake::Task[:player_data].execute
+    Rake::Task[:scoring_season_data].execute
 
   end
   desc "add player hockey data to the db"
