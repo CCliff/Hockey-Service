@@ -11,7 +11,7 @@ class PlayerController < ApplicationController
     content_type :json
     player = Player.find_by(playerID: params['id'])
     seasons = player.scoring_seasons
-    last_season = {}
+    # last_season = {}
     # seasons.map do |season|
 
     #   if last_season['year'] == season['year']
